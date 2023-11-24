@@ -1,0 +1,156 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 16 de nov. de 2023, 09:30:32
+    Author     : drcj1
+*/
+
+/* Reset de margens e padding para o corpo da página */
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos 100% da altura da janela */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #bbcbbc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .guia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .cabecalho {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header .cabecalho li {
+    margin-right: 20px;
+}
+
+/* Mídia query para ajustar o layout em telas menores */
+@media (max-width: 768px) {
+    header .indice {
+        display: none; 
+    }
+
+    header .cabecalho {
+        flex-direction: column; 
+    }
+
+    header .cabecalho li {
+        margin: 10px 0; 
+    }
+}
+
+/* Conteúdo principal */
+main {
+    display: flex;
+    width: 50%;
+    max-width: 100%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 20px;
+    border-radius: 30px;
+    text-align: center;
+} 
+
+/* Estilos para a tela de login */
+.tela-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* Estilos para o formulário de login */
+.form-sign {
+  max-width: 500px; /* Ajuste a largura máxima conforme necessário */
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o título "Login" */
+.form-group h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para rótulos e campos de entrada */
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilos para campos de entrada */
+.form-control {
+  width: 50%;
+  padding: 15px;
+  margin-bottom: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para o botão de login */
+#btnLog {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para o botão de login (hover) */
+#btnLog:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #bbcbbc;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para a barra inferior no rodapé */
+.barraInferior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.logoSocial {
+    font-size: 22px;
+    margin-right: auto;
+}
+
+.copyRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-right: 95px;
+    color: black;
+}

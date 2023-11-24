@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Farma Dorinhos | Saúde e Bem-Estar, no Coração da Dorinhos!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styleEstoque.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo_farma_2.png" alt="logo_farma_2">
+            </div>          
+
+            <nav>
+                <div class="indice">
+                    <ul class="cabecalho">
+                        <li><a href="inicio.html">Home</a></li>
+                        <li><a href="cadastrar.html">Cadastro de Produto</a></li>
+                        <li><a href="excluir.html ">Excluir Produto</a></li>
+                        <li><a href="controller?flag=listar" target="centro">Lista de Produtos</a></li>
+                        <li><a href="procurar.html">Procurar Produto</a></li>
+                        <li><a href="alterar.html">Alterar Produto</a></li>
+                        <li class="logout"><a href="index.html"><button>Logout</button></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+
+        <main>
+            <div class="container">
+                <div class="title">
+                    <h1>Localizar Produtos</h1>
+                </div>
+
+                <div class="excProd">
+                    <form method="post" action="controller?flag=localizar">
+                        <fieldset class="cadItem">
+                            <p>
+                                <label for="principioAtivo"> Nome do produto: </label>
+                                <input id="principioAtivo" type="text" name="principioAtivo" required>
+                            </p>
+
+                            <p>
+                                <input type="submit" value="Localizar">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="barraInferior">
+                <div class="logoSocial">
+                    <img src="img/face.png" alt="face">
+                    <img src="img/insta.png" alt="instagram">
+                    <img src="img/twiter.png" alt="twiter">
+                    <img src="img/linke.png" alt="linkedin">                  
+                </div>
+
+                <div class="copyRight">
+                    <p>&copy; 2023 Farma Dorinhos</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

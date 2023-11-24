@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Farma Dorinhos | Saúde e Bem-Estar, no Coração da Dorinhos!</title>
+        <link rel="stylesheet" type="text/css" href="css/styleAreaRestrita.css">
+    </head>
+
+    <header>
+        <div class="guia">
+            <img src="img/logo_farma_2.png" alt="logo_farma_2">
+
+            <div class="indice">
+                <ul class="cabecalho">
+                    <li><a href="index.html">PÁGINA INICIAL</a></li>
+                    <li><a href="areaRestrita.html">AREA RESTRITA</a></li>
+                    <li><a href="sobre.html">SOBRE NÓS</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </div>                
+        </div>      
+    </header>
+
+    <main>
+        <div class="tela-login">
+            <div class="tela-cabecalo">
+                <div class="form-sign">
+                    <div class="form-group text-center">
+                        <h3>Login</h3>                            
+                    </div>
+
+                    <div class="tela-input">
+                        <form method="post" action="loginUsers">
+                            <label for="nome"> Usuario: </label>
+                            <input id="nome" type="text" name="nome" class="form-control" placeholder="Digite seu usuário">
+                            <br>
+                            <label for="senha"> Senha: </label>
+                            <input id="senha" type="password" name="senha" class="form-control" placeholder="Digite sua senha">
+                            <br>
+                            <input type="submit" value="Logar" id="btnLog" class="btn btn-primary btn-block">
+
+                            <div id="mensagemErro" style="color: red; margin-top: 10px;"></div>
+                        </form>
+
+                        <script>
+                            function exibirMensagemErro(mensagem) {
+                                document.getElementById("mensagemErro").innerText = mensagem;
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </main>
+
+    <footer>
+        <div class="barraInferior">
+            <div class="logoSocial">
+                <img src="img/face.png" alt="face">
+                <img src="img/insta.png" alt="instagram">
+                <img src="img/twiter.png" alt="twiter">
+                <img src="img/linke.png" alt="linkedin">                  
+            </div>
+
+            <div class="copyRight">
+                <p>&copy; 2023 Farma Dorinhos</p>
+            </div>
+        </div>
+    </footer>
+</html>

@@ -1,0 +1,217 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 3 de nov. de 2023, 10:24:36
+    Author     : drcj1
+*/
+
+/* Estilos para o corpo da página */
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #bbcbbc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px; /* Adiciona espaçamento entre o cabeçalho e o conteúdo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .indice {
+    margin-left: 20px;
+    text-align: center;
+}
+
+header .cabecalho {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: 40px;
+    float: left;
+    text-decoration: none;
+}
+
+header .cabecalho li {
+    margin-right: 30px;
+}
+
+/* Mídia query para ajustar o layout em telas menores */
+@media (max-width: 768px) {
+    header .indice {
+        display: none; 
+    }
+
+    header .cabecalho {
+        flex-direction: column; 
+    }
+
+    header .cabecalho li {
+        margin: 15px 0; 
+    }
+}
+
+nav {    
+    overflow: hidden;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    max-width: none;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o container */
+.container {
+    max-width: none; /* Largura máxima do container */
+    margin: 20px auto; /* Centraliza o container na página */
+    padding: 20px; /* Adiciona espaçamento interno ao conteúdo do container */
+    background-color: #fff; /* Cor de fundo do container */ 
+    text-align: center; /* Alinha o texto no centro */
+}
+
+/* Estilos para o título dentro do container */
+.container h1 {
+    color: #333; /* Cor do título */
+}
+
+/* Estilos para o botão de logout */
+.logout {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    transition: background-color 0.3s; /* Adiciona uma transição suave apenas para a cor de fundo */
+}
+
+.logout a {
+    text-decoration: none;
+    color: #4CAF50
+}
+
+.logout:hover {
+    background-color: #36833d;
+}
+
+table.tabela {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
+}
+
+table.tabela th {
+  background-color: #ccc;
+  text-align: center;
+  padding: 10px;
+}
+
+table.tabela td {
+  padding: 10px;
+}
+
+table.tabela td:nth-child(even) {
+  background-color: #eee;
+}
+
+.titulo {
+  text-align: center;
+}
+
+/* Estilo para o formulário */
+fieldset.cadItem {
+    border: 10px solid #ccc;
+    border-radius: 5px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+/* Estilo para os rótulos (labels) */
+fieldset.cadItem label {
+    display: inline-block; /* Rótulos ao lado dos campos */
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 30%; /* Largura do rótulo, ajuste conforme necessário */
+}
+
+/* Estilo para os campos de entrada (inputs) */
+fieldset.cadItem input {
+    width: 65%; /* Largura do campo de entrada, ajuste conforme necessário */
+    padding: 8px; /* Aumenta o padding para aumentar a altura */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o botão de envio */
+fieldset.cadItem input[type="submit"] {
+    width: 100%; /* Ocupa a largura total do fieldset */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px; /* Aumenta o padding para aumentar a altura */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo para o botão de envio ao passar o mouse sobre ele */
+fieldset.cadItem input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #bbcbbc;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+.barraInferior {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.logoSocial {
+    font-size: 22px;
+    margin-right: auto;
+    margin-left: 95px;
+}
+
+.copyRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-right: 95px;
+    color: black;
+}
